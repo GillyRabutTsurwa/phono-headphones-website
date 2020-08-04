@@ -1,0 +1,25 @@
+{
+  "name": "phono-headphones",
+  "version": "1.0.0",
+  "description": "Phono Headphones Website with Deployment",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass dist/Sass/main.scss dist/CSS/styles.css -w --output-style compressed",
+    "devserver": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel devserver compile:sass"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "Lightbox",
+    "Netlify",
+    "Deployment"
+  ],
+  "author": "Gilbert Rabut Tsurwa",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
